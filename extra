@@ -1,0 +1,139 @@
+https://code.visualstudio.com/ > install
+https://nodejs.org/en/ > install
+https://git-scm.com/downloads > install
+https://github.com/ > sign up
+https://github.com/Aakashdeveloper > Follow
+https://github.com/developerTech > Follow
+
+Add to Chrome (https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
+
+Vs Code extensions
+> TabNine
+> Eslint
+> spell Check
+> git history
+> git lens
+> vscode-icons
+
+
+NPM
+Basic NodeJS(in built)(Os,file,http)
+/////////////////
+NodeJS(full Stack App) (Node-EJs-Mongo-Express)
+Third Party Api (Weather Api)
+Redis  > 6379
+RedisWithMongo
+ImageUpload
+Node-Es6(.babel)
+MongoDb Basic >27017  (local/cloud)
+Zomato App backend
+Api with NodeJS(Rest)>1
+Swagger
+Testing
+DashBoard(Crud)
+Github
+Login/Logout(JWT)
+Oauth(with github)
+--Deployment of app---
+Heroku
+Pm2
+Docker
+Nginx
+Jenkins
+Oauth(with google)
+GraphQl API
+NodeJs with postgres
+Paytm-Payment
+Email With Node(sendgird)(https://app.sendgrid.com/)
+Chatapp
+TelegramChat
+FIREBASE
+--------NOT---------
+React/Angular
+Html/css/jquery
+
+microservice(aws lambda)
+upload to s3 bucket
+
+//////////////////////////
+NodeJs
+> Single-Thread Async Non-Blocking I/O
+
+Event loop base structure 
+
+Code
+\
+machine code
+
+V8 engine (processor)
+
+////////////
+NPM
+>> Node Package Manager
+
+///json
+> JavaScript Object Notation
+[
+    {
+        "name":"Amit",
+        "city":"Delhi"
+    },
+    {
+        "name":"Nikita",
+        "city":"Mumbai",
+        "age":10
+    }
+]
+
+///////Package.json/////////
+> Entry Point to the app
+> Details of the app (meta data)
+> Contains packages we are using
+> Contains Script to start,test
+
+/////
+Step To generate package.json
+///////
+**NodeJs must be install in our laptop
+> Go Inside the folder using cmd/terminal
+> type 'npm init'
+> answer all questions
+
+
+local > used in particular folder
+dev > use only for development purpose
+global > need before app start
+/////
+Step To install packages
+///////
+**NodeJs must be install in our laptop
+> Go Inside the folder using cmd/terminal
+> npm i packagename
+
+///es5
+function add(a,b){
+    return a+b
+}
+
+add(1,2)
+3
+
+//es6
+let add = (a,b) => {
+    return a+b
+}
+add(1,2)
+3
+
+
+////// Step to install global package//////
+#window
+> open the cmd as adminstrator
+> npm i -g packagename
+
+#mac/linux
+> open terminal
+> sudo npm i -g packagename
+
+>>>nodemon
+(automatically restart the server whenever detect any changes)
