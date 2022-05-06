@@ -1,1 +1,6 @@
-::1 - GET /products HTTP/1.1 304 - - 15.790 ms
+::1 - GET /products HTTP/1.1 304 - - 56.228 ms
+::1 - GET /css/bootstrap.min.css HTTP/1.1 304 - - 7.278 ms
+::1 - GET /css/styles.css HTTP/1.1 304 - - 5.706 ms
+::1 - GET /js/bootstrap.min.js HTTP/1.1 304 - - 1.396 ms
+::1 - GET /fonts/glyphicons-halflings-regular.woff HTTP/1.1 404 178 - 4.885 ms
+::1 - GET /fonts/glyphicons-halflings-regular.ttf HTTP/1.1 404 177 - 1.793 ms

@@ -25,7 +25,8 @@ var category = [
 ]
 categoryRouter.route('/')
     .get(function(req,res){
-        res.send(category)
+        //res.send(category)
+        res.render('category',{title:'Category',data:category})
     })
 
 categoryRouter.route('/details')

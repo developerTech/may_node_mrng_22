@@ -1,6 +1,8 @@
 let express = require('express');
 let app = express();
-let port = 7600;
+let dotenv = require('dotenv');
+dotenv.config()
+let port = process.env.PORT || 7600;
 let fs = require('fs');
 let categoryRouter = require('./src/router/categoryRouter')
 let productRouter = require('./src/router/productRouter')
@@ -10,9 +12,17 @@ let helmet = require('helmet')
 app.use(morgan('short',{stream: fs.createWriteStream('./app.logs')}))
 app.use(helmet()); // https://www.npmjs.com/package/helmet
 
+//static files path
+app.use(express.static(__dirname + '/public'));
+//html file patch
+app.set('views','./src/views');
+// view engine 
+app.set('view engine', 'ejs');
+
 //default route
 app.get('/',function(req,res){
-    res.send('Welcome to Shopping')
+    // res.send('<h1>Welcome to Shopping</h1>')
+    res.render('index',{title:'Home Page'})
 })
 
 app.use('/category', categoryRouter)
@@ -21,6 +31,6 @@ app.use('/products', productRouter)
 app.listen(port, function(err){
     if(err) throw err;
     else{
-        console.log('Server is running on port 7600')
+        console.log(`Server is running on port ${port}`)
     }
 })
