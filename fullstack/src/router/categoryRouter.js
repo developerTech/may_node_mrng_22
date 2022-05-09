@@ -23,15 +23,21 @@ var category = [
         "thumb":"https://i.ibb.co/r3SZq8S/footware.jpg"
     }
 ]
-categoryRouter.route('/')
+
+function router(menu){
+    categoryRouter.route('/')
     .get(function(req,res){
         //res.send(category)
-        res.render('category',{title:'Category',data:category})
+        res.render('category',{title:'Category',data:category,menu})
     })
 
-categoryRouter.route('/details')
+    categoryRouter.route('/details')
     .get(function(req,res){
         res.send('Category Details')
-    })
+    }) 
+    
+    return categoryRouter
+}
 
-module.exports = categoryRouter
+
+module.exports = router

@@ -1,0 +1,87 @@
+https://www.mongodb.com/try/download/community
+
+#window
+> create folder by the name of data in c drive (c:/data)
+> inside data make folder by name of db (c:/data/db)
+
+#start Server
+> open cmd and navigate to folder bin
+    (c/programFile/mongodb/server/5.3/bin)
+> mongod  (start mongo server on port 27017)
+
+#start Client
+> open cmd and navigate to folder bin
+    (c/programFile/mongodb/server/5.3/bin)
+> mongo
+
+#mac/linux
+> create folder 
+> open terminal and type (mkdir data/db)  (~/data/db)
+
+#start Server
+> open terminal
+> mongod --dbpath data/db
+
+#start Client
+> open terminal
+> mongo
+
+RollNo | Hindi | English |
+  1    |  80   |         |
+  2    |       |   70    |
+  3    |  90   |         |
+
+[
+    {
+        RollNo:1,
+        Hindi:80,
+        Computer:90
+    },
+    {
+        RollNo:2,
+        English:70
+    }
+    {
+        RollNo:3,
+        Hindi:90
+    }
+]
+
+////////////////////////
+SQl         MongoDb
+Database    Database
+Table       Collection
+Row         Document
+Select      Find
+Insert      insert
+Delete      Remove
+Update      Update/upsert
+
+////to see all the db
+> show dbs
+
+/// to go inside db
+> use dbname
+
+////to see all the collections
+> show collections
+
+///find
+> db.collectionName.find()
+
+>db.products.find().pretty() //only for console
+
+//create db
+> use dbname
+
+//insert
+> db.sports.insert({name:'Cricket'})
+> db.sports.insert({name:'Football'})
+> db.sports.insert({name:'Basketball'})
+> db.sports.insert({_id:1,name:'Cycling'})
+> db.sports.insert({_id:2,name:'Boxing'})
+
+12 byte
+(random number) 5 bytes
+(series ) 3 bytes
+(timestamp ) 4 bytes

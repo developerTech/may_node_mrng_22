@@ -4,6 +4,7 @@ https://git-scm.com/downloads > install
 https://github.com/ > sign up
 https://github.com/Aakashdeveloper > Follow
 https://github.com/developerTech > Follow
+https://www.mongodb.com/products/compass > install
 
 Add to Chrome (https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
 
@@ -151,3 +152,4 @@ var b = `my age is ${a}`
 //upgarde npm version
 
 //// npm version patch
+

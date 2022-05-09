@@ -514,15 +514,21 @@ var products = [
         "company": "Bajaj"
     }
 ]
-productRouter.route('/')
-.get(function(req,res){
-    // res.send(products)
-    res.render('products',{title:'Products Page',products})
-})
 
-productRouter.route('/details')
-.get(function(req,res){
-    res.send('Products Details')
-})
+function router(menu){
+    productRouter.route('/')
+    .get(function(req,res){
+        // res.send(products)
+        res.render('products',{title:'Products Page',products,menu})
+    })
+    
+    productRouter.route('/details')
+    .get(function(req,res){
+        res.send('Products Details')
+    })
 
-module.exports = productRouter
+    return productRouter
+}
+
+
+module.exports = router
