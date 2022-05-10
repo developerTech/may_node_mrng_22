@@ -19,8 +19,8 @@ Vs Code extensions
 
 NPM
 Basic NodeJS(in built)(Os,file,http)
-/////////////////
 NodeJS(full Stack App) (Node-EJs-Mongo-Express)
+/////////////////
 Third Party Api (Weather Api)
 Redis  > 6379
 RedisWithMongo
@@ -153,3 +153,13 @@ var b = `my age is ${a}`
 
 //// npm version patch
 
+
+Params
+> It is compulsory to define
+> Use for small values
+> pass after (/)
+
+QueryParams
+> No Need to define
+> use for multiple values
+> pass after (?)

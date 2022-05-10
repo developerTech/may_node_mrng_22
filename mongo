@@ -85,3 +85,8 @@ Update      Update/upsert
 (random number) 5 bytes
 (series ) 3 bytes
 (timestamp ) 4 bytes
+
+db.category.drop()
+
+//////On The Basis Of Condition//////
+db.products.find({category_id:2,product_name:'Iron'}).pretty()
