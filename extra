@@ -20,8 +20,8 @@ Vs Code extensions
 NPM
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJs-Mongo-Express)
-/////////////////
 Third Party Api (Weather Api)
+/////////////////
 Redis  > 6379
 RedisWithMongo
 ImageUpload
@@ -45,7 +45,7 @@ Oauth(with google)
 GraphQl API
 NodeJs with postgres
 Paytm-Payment
-Email With Node(sendgird)(https://app.sendgrid.com/)
+Email With Node(nodemailer)
 Chatapp
 TelegramChat
 FIREBASE
@@ -163,3 +163,6 @@ QueryParams
 > No Need to define
 > use for multiple values
 > pass after (?)
+
+download Redis > https://redis.io/download/
+> 6379
