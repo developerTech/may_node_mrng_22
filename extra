@@ -21,9 +21,9 @@ NPM
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJs-Mongo-Express)
 Third Party Api (Weather Api)
-/////////////////
 Redis  > 6379
 RedisWithMongo
+/////////////////
 ImageUpload
 Node-Es6(.babel)
 MongoDb Basic >27017  (local/cloud)
@@ -166,3 +166,12 @@ QueryParams
 
 download Redis > https://redis.io/download/
 > 6379
+
+
+KEYS *
+set key value
+set key value ex 10000
+get key
+del key 
+FLUSHALL
+
