@@ -23,8 +23,8 @@ NodeJS(full Stack App) (Node-EJs-Mongo-Express)
 Third Party Api (Weather Api)
 Redis  > 6379
 RedisWithMongo
-/////////////////
 ImageUpload
+/////////////////
 Node-Es6(.babel)
 MongoDb Basic >27017  (local/cloud)
 Zomato App backend
@@ -175,3 +175,4 @@ get key
 del key 
 FLUSHALL
 
+https://www.w3schools.com/nodejs/nodejs_uploadfiles.asp
