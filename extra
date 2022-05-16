@@ -24,8 +24,9 @@ Third Party Api (Weather Api)
 Redis  > 6379
 RedisWithMongo
 ImageUpload
-/////////////////
+Formidable (imgupload)
 Node-Es6(.babel)
+/////////////////
 MongoDb Basic >27017  (local/cloud)
 Zomato App backend
 Api with NodeJS(Rest)>1

@@ -1,6 +1,6 @@
-import express from 'express'
-import request from 'request'
+let express = require('express');
 let app = express();
+let request = require('request');
 let port = process.env.PORT || 7600;
 
 app.use(express.static(__dirname + '/public'))
