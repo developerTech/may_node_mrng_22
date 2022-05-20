@@ -5,6 +5,7 @@ https://github.com/ > sign up
 https://github.com/Aakashdeveloper > Follow
 https://github.com/developerTech > Follow
 https://www.mongodb.com/products/compass > install
+https://www.postman.com/downloads/ install
 
 Add to Chrome (https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
 
@@ -177,3 +178,9 @@ del key
 FLUSHALL
 
 https://www.w3schools.com/nodejs/nodejs_uploadfiles.asp
+
+
+C > Create > insert > POST
+R > Read > reading data > GET
+U > Update > Put/Patch
+D > Delete > Delete
