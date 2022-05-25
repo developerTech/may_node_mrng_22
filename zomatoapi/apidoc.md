@@ -48,4 +48,6 @@ http://localhost:9100/menu/8
 # GET Order on basis of emailId
 > http://localhost:9100/getOrder?email=a@a.com
 # Update the order status
+(put)> http://localhost:9100/updateOrder
 # Delete the orders
+(delete)> http://localhost:9100/removeOrder

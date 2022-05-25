@@ -157,6 +157,37 @@ app.get('/getOrder',(req,res) => {
     })
 })
 
+//update Order
+app.put('/updateOrder',(req,res) => {
+    db.collection('orders').updateOne(
+        {_id:mongo.ObjectId(req.body._id)},
+        {
+            $set:{
+                "status":req.body.status
+            }
+        },(err,result)=>{
+            if(err) throw err;
+            res.status(200).send('Status Updated')
+        }
+    )
+})
+
+//Delete Order
+app.delete('/removeOrder',(req,res) => {
+    let id = mongo.ObjectId(req.body._id)
+    db.collection('orders').find({_id:id}).toArray((err,result) => {
+        if(result.length != 0){
+            db.collection('orders').deleteOne({_id:id},(err,result) => {
+                if(err) throw err;
+                res.send(`Date Removed`)
+            })
+        }else{
+            res.send(`No Result Found`)
+        }
+    })
+    
+})
+
 
 app.get('/list/:item',(req,res) => {
     let colName = req.params.item
