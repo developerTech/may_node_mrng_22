@@ -25,6 +25,163 @@
                     }
                 }
             }
+        },
+        "/users":{
+            "summary":"Testing Users",
+            "get":{
+                "description":"Get All Users",
+                "tags":["Public Route"],
+                "parameters":[
+                    {
+                        "in":"query",
+                        "name":"role",
+                        "schema":{
+                            "type":"string"
+                        },
+                        "description":"Choose User Role"
+                    },
+                    {
+                        "in":"query",
+                        "name":"city",
+                        "schema":{
+                            "type":"string"
+                        },
+                        "description":"Provide User City"
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description":"Health Check Pass"
+                    },
+                    "404":{
+                        "description":"No Route Found"
+                    }
+                }
+            }
+        },
+        "/user/{id}":{
+            "summary":"Testing Particular Users",
+            "get":{
+                "description":"Get Particular Users",
+                "tags":["Public Route"],
+                "security":{
+                    "basic-auth":[]
+                },
+                "parameters":[
+                    {
+                        "in":"path",
+                        "name":"id",
+                        "schema":{
+                            "type":"string"
+                        },
+                        "description":"Enter User Id"
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description":"Health Check Pass"
+                    },
+                    "404":{
+                        "description":"No Route Found"
+                    }
+                }
+            }
+        },
+        "/addUser":{
+            "summary":"Add Users",
+            "post":{
+                "description":"Add Users",
+                "tags":["Public Route"],
+                "requestBody":{
+                    "required":true,
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "type":"object",
+                                "id":"string"
+                            },
+                            "example":{
+                                "name":"Parul",
+                                "city":"Innsburg",
+                                "phone":8767687534,
+                                "role":"User",
+                                "isActive":true
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"Health Check Pass"
+                    },
+                    "404":{
+                        "description":"No Route Found"
+                    }
+                }
+            }
+        },
+        "/updateUser":{
+            "summary":"Update Users",
+            "put":{
+                "description":"Update Users",
+                "tags":["Public Route"],
+                "requestBody":{
+                    "required":true,
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "type":"object",
+                                "id":"string"
+                            },
+                            "example":{
+                                "_id": "628ee9fc391b01fb12216b95",
+                                "name":"Parul",
+                                "city":"Innsburg",
+                                "phone":8767687534,
+                                "role":"User",
+                                "isActive":true
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"Health Check Pass"
+                    },
+                    "404":{
+                        "description":"No Route Found"
+                    }
+                }
+            }
+        },
+        "/deleteUser":{
+            "summary":"Delete Users",
+            "delete":{
+                "description":"Delete Users",
+                "tags":["Public Route"],
+                "requestBody":{
+                    "required":true,
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "type":"object",
+                                "id":"string"
+                            },
+                            "example":{
+                                "_id": "628ee9fc391b01fb12216b95"
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"Health Check Pass"
+                    },
+                    "404":{
+                        "description":"No Route Found"
+                    }
+                }
+            }
         }
     }
 }
