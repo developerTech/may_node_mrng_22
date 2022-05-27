@@ -33,11 +33,10 @@ Api with NodeJS(Rest)>1
 DashBoard(Crud)
 Swagger
 Testing
+TelegramChat
+Email With Node(nodemailer)
 /////////////////
 Github
-
-Login/Logout(JWT)
-Oauth(with github)
 --Deployment of app---
 Heroku
 Pm2
@@ -45,13 +44,13 @@ Docker
 Nginx
 Jenkins
 
+Login/Logout(JWT)
+Oauth(with github)
 Oauth(with google)
 GraphQl API
 NodeJs with postgres
 Paytm-Payment
-Email With Node(nodemailer)
 Chatapp
-TelegramChat
 FIREBASE
 --------NOT---------
 React/Angular
