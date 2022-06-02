@@ -36,19 +36,20 @@ Testing
 TelegramChat
 Email With Node(nodemailer)
 Github
+Login/Logout(JWT)
 --Deployment of app---
 Heroku
-/////////////////
 Pm2
 Docker
 Nginx
 Jenkins
-
-Login/Logout(JWT)
+/////////////////
 Oauth(with github)
 Oauth(with google)
+
 GraphQl API
 NodeJs with postgres
+
 Paytm-Payment
 Chatapp
 FIREBASE
@@ -185,3 +186,34 @@ C > Create > insert > POST
 R > Read > reading data > GET
 U > Update > Put/Patch
 D > Delete > Delete
+
+
+npm i express bcryptjs body-parser cors jsonwebtoken mongoose
+/******GetUser*****/
+(GET)> http://localhost:5000/api/auth/users
+
+/******Register*****/
+(POST)> http://localhost:5000/api/auth/register
+(body) => {"name":"Aakash", "email":"aa@gmail.com","password":"12345678","role":"admin"}
+
+
+/******Login*****/
+(POST) => http://localhost:5000/api/auth/login
+(body)  => {"email":"aa@gmail.com","password":"12345678"}
+
+/******UserInfo*****/
+(GET) => http://localhost:5000/api/auth/userinfo
+(Header) => {'x-access-token':'token value from login'}
+
+(https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps)
+
+>>>>>><<<<<<<<>>>>>>>>
+npm i -g pm2
+
+pm2 start filename
+pm2 status
+pm2 stop filename
+
+
+docker build -t imagename
+docker run -p 9800:3000 imagename
