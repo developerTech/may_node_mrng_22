@@ -43,14 +43,13 @@ Pm2
 Docker
 Nginx
 Jenkins
-/////////////////
 Oauth(with github)
 Oauth(with google)
-
+Paytm-Payment
+/////////////////
 GraphQl API
 NodeJs with postgres
 
-Paytm-Payment
 Chatapp
 FIREBASE
 --------NOT---------
