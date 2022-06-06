@@ -46,10 +46,9 @@ Jenkins
 Oauth(with github)
 Oauth(with google)
 Paytm-Payment
-/////////////////
-GraphQl API
 NodeJs with postgres
-
+GraphQl API
+/////////////////
 Chatapp
 FIREBASE
 --------NOT---------
@@ -216,3 +215,6 @@ pm2 stop filename
 
 docker build -t imagename
 docker run -p 9800:3000 imagename
+
+////dummy api
+npx json-server --watch db.json --port 8600
