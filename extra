@@ -54,10 +54,6 @@ FIREBASE
 --------NOT---------
 React/Angular
 Html/css/jquery
-
-microservice(aws lambda)
-upload to s3 bucket
-
 //////////////////////////
 NodeJs
 > Single-Thread Async Non-Blocking I/O
