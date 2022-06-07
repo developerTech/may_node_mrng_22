@@ -48,7 +48,6 @@ Oauth(with google)
 Paytm-Payment
 NodeJs with postgres
 GraphQl API
-/////////////////
 Chatapp
 FIREBASE
 --------NOT---------
@@ -214,3 +213,6 @@ docker run -p 9800:3000 imagename
 
 ////dummy api
 npx json-server --watch db.json --port 8600
+
+
+npm i -g firebase
